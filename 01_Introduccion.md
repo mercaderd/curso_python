@@ -69,14 +69,14 @@ Se puede intalar Python (intérprete + biblioteca estándar) desde la web oficia
 > **Nota**:
 > Si el objetivo es trabajar en ciencia de datos, aprendizaje automático o similar, se puede instalar alguna plataforma integrada como [Anaconda](https://www.anaconda.com/), que incluirá el intérprete de Python, la biblioteca estándar y una amplia colección de bibliotecas para ciencia de datos, aprendizaje automático, inteligencia artificial, etc. 
 
-## Entorno de desarrollo
+### Entorno de desarrollo
 Los entornos de desarrollo mas populares para Python son:
-- Pycharm
-- Visual Studio Code o Visual Studio Codium
+- [Pycharm](https://www.jetbrains.com/es-es/pycharm/)
+- [Visual Studio Code](https://code.visualstudio.com/) o su versión de código abierto [VSCodium](https://vscodium.com/)
 
 Sigue este tutorial de Microsoft para [Instalar Python y VSCode en tu ordenador Windows](https://learn.microsoft.com/es-es/windows/python/beginners)
 
-## Opción para no instalar nada en tu ordenador Github y Codespaces
+## Opción para no instalar nada en tu ordenador: Github y Codespaces
 Github es un portal para alojar código de cualquier desarrollador utilizando el control de versiones Git. Github ofrece además la posibilidad de utilizar un entorno de desarrollo con Visual Studio Code en la nube, llamado Codespaces. La versión gratuita de Github permite alojar proyectos en repositorios públicos o privados, y la versión gratuita de Codespaces permite disfrutar de 60 horas al mes de entorno de desarrollo en la nube desde cualquier navegador web. Esto es ideal para cualquiera que se quiera introducir al mundo del desarrollo y no quiera/pueda instalar nada en el dispositivo que va a utilizar.
 
 De forma resumida, los pasos a seguir serán:
@@ -93,3 +93,9 @@ Más detalles en la [siguiente](02_Repo_Codespaces.md) lección.
 > **Nota 2**:
 > Al finalizar cada sesión de trabajo, elimina o para tu Codespace para no alcanzar el límite de 60 horas gratuitas cuando no estás trabajando con el.
 
+## Recursos de aprendizaje
+
+- [Tutorial oficial de Python](https://docs.python.org/es/3/tutorial/).
+- Repo [Cursos de Python desde cero](https://github.com/mouredev/Hello-Python) de Mouredev. Repositorios en Github + Vídeos.
+- Repo [30 días de Python](https://github.com/Asabeneh/30-Days-Of-Python).
+- [Python for Everybody](https://www.py4e.com/)

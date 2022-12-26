@@ -57,8 +57,69 @@ Visual Studio Code detectará que estás desarrollando en Python y te preguntar�
 
 8. Ejecuta el script pulsando el botón ▶ de la parte superior derecha de la pantalla. Visual Studio Code abrirá un terminal de Python en la parte inferior de la pantalla y ejecutará el script. Si no hay ningún problema, imprimirá el mensaje "¡Hola mundo!".
 
-![Hola Mundo](./media/01/01_011_NewRepo.jpg)
+![Git](./media/01/01_011_NewRepo.jpg)
 
 9. (Opcional) Prueba a cambiar el texto entre comillas ¡Hola mundo! por cualquier otro mensaje y ejecuta de nuevo el script.
 
 ## Sincronizar los cambios con el repositorio de Github
+
+Consulta información básica sobre el control de versiones git y Github [aquí](https://docs.github.com/es/get-started/using-git/about-git).
+
+Desde Visual Studio Code es posible trabajar con el control de versiones Git y mantener el respositorio sincronizado con Github. Para ello, es necesario ir a la pestaña de control de versiones.
+
+10. En los botones de la izquierda, pulsa en de control de versiones (marcado en rojo en la siguiente imágen).
+
+![Git](./media/01/01_013_NewRepo.jpg)
+
+En el panel de la izquierda se pueden comprobar qué archivos tienen cambios, en este caso dos archivos.
+
+11. Confirma los cambios que quieres hacer en el repositorio, en este caso los cambios en todos los archivos. Pulsa el + que se marca en rojo en la siguiente imágen. (También podrías confirmar los cambios de forma individual en cada archivo, pulsando el botón + en cada uno de ellos.)
+
+![Git](./media/01/01_014_NewRepo.jpg)
+
+12. Haz "commit" en el respositorio en local (dónde estés trabajando con VSCode, tu ordenador o un Codespace). Escribe un mensaje descriptivo en el cuadro de texto y pulsa el botón "Confirmación".
+
+![Git](./media/01/01_015_NewRepo.jpg)
+
+13. Sincroniza los cambios con el repositorio en Github pulsando el botón "Sincronizar cambios".
+
+![Git](./media/01/01_016_NewRepo.jpg)
+
+Aparecerá el siguiente mensaje que debes aceptar o marcar "Ok, Don't show again".
+
+![Git](./media/01/01_017_NewRepo.jpg)
+
+También puede aparecerte el siguiente mensaje para que el codespace se actualice regularmente con el repositorio. Pulsa igualmente "Sí".
+
+![Git](./media/01/01_018_NewRepo.jpg)
+
+Tras unos instantes, todos los cambios se habrán sincronizado con el repositorio en GitHub. Si visitas tu repositorio (es posible que tengas que refrescar el navegador) en Github, verás que todos los cambios se han aplicado.
+
+![Git](./media/01/01_019_NewRepo.jpg)
+
+## Cerrar el Codespace
+
+Cuando acabes de desarrollar es necesario cerrar el codespace para que no permanezca activo. Mientras el codespace está desactivado no computarán las horas de uso. Recuerda que para una cuenta gratuita de Github el límite son 60h/mes gratis, a partir de la hora 60 tiene un coste. Cada mes se resetean las 60 horas gratuitas.
+
+14. Para cerrar el codespace pulsa sobre "Codespaces" en la parte inferior izquierda de la ventana de Visual Studio Code, y pulsa "Stop Current Codespace" entre las opciones disponibles.
+
+![Git](./media/01/01_020_NewRepo.jpg)
+
+Para volver a trabajar con Visual Studio Code tendrás que volver a lanzar el Codespace. No hay limitación en cuanto al número de veces que puede pararse o lanzarse un Codespace.
+
+## Rearrancar un Codespace
+
+15. Desde Github, con la sesión iniciada pulsa "Codespaces" en la barra superior.
+
+![Git](./media/01/01_021_NewRepo.jpg)
+
+16. Pulsa sobre el nombre del codespace que quieres rearrancar y confirma pulsando el botón "Restart codespace".
+
+![Git](./media/01/01_022_NewRepo.jpg)
+
+![Git](./media/01/01_023_NewRepo.jpg)
+
+En unos segundos volverás a tener Visual Studio Code listo para continuar trabajando.
+
+
+

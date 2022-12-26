@@ -2,7 +2,8 @@
 
 ## Lección 01: [Introducción](01_Introduccion.md)
 - Qué es Python 
-- Instalar Python 
+- Instalar Python y un entorno de desarrollo
+- Opción para no instalar nada en tu ordenador: Github y Codespaces
 - Recursos de aprendizaje
 
 ## Lección 02: [Hola Mundo con Github y Codespaces](02_Repo_Codespaces.md)
