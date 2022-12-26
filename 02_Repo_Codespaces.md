@@ -47,6 +47,10 @@ Los scripts o programas en Python se escriben en archivos de texto con extensió
 
 7. Completa el archivo "main.py" con el texto "print("¡Hola mundo!")", tal y cómo se muestra en la imágen.
 
+```python
+print("¡Hola mundo!")
+```
+
 ![main.py](./media/01/01_009_NewRepo.jpg)
 
 Este programa es muy sencillo, únicamente escribe por pantalla/consola el mensaje "¡Hola Mundo!" cada vez que se ejecuta.
@@ -60,6 +64,10 @@ Visual Studio Code detectará que estás desarrollando en Python y te preguntar�
 ![Git](./media/01/01_011_NewRepo.jpg)
 
 9. (Opcional) Prueba a cambiar el texto entre comillas ¡Hola mundo! por cualquier otro mensaje y ejecuta de nuevo el script.
+
+```python
+print("¿Qué miras?, Bobo")
+```
 
 ## Sincronizar los cambios con el repositorio de Github
 
