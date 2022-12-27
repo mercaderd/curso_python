@@ -1,5 +1,8 @@
 # Lección 02: Hola Mundo con Github y Codespaces
 
+**[Anterior](../01/01_Introduccion.md)**
+**[Índice](../README.md)**
+
 ## Pasos previos
 Para continuar con esta lección, previamente deberías:
 - Haber creado una cuenta (gratuita) de usuario en [Github](https://github.com).
@@ -132,5 +135,5 @@ Para volver a trabajar con Visual Studio Code tendrás que volver a lanzar el Co
 
 En unos segundos volverás a tener Visual Studio Code listo para continuar trabajando.
 
-**[Siguiente](../03/03_Lexico.md) Lección**
+**[Siguiente](../03/03_Lexico.md)**
 

@@ -1,5 +1,8 @@
 # Lección 04: Variables
 
+**[Anterior](../03/03_Lexico.md)**
+**[Índice](../README.md)**
+
 ## Nombres de variables
 
 ## Números
@@ -8,4 +11,5 @@
 
 ## Tipos de variables
 
+**[Siguiente]()**
 

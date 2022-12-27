@@ -1,5 +1,8 @@
 # Lección 03: Léxico
 
+**[Anterior](../02/02_Repo_Codespaces.md)**
+**[Índice](../README.md)**
+
 ## Un programa en Python
 
 Un programa en Python es un arhivo de texto, por defecto en codificación UTF-8. El programa se divide en líneas lógicas que son leidas por un *parser* (analizador sintáctico) e interpretadas. Los programas en python tienen extensión ".py".
@@ -78,4 +81,4 @@ getattr()       locals()        repr()          zip()           compile()       
 __import__()    complex()       hasattr()       max()           round()
 ```
 
-**[Siguiente](../04/04_Variables.md) Lección**
+**[Siguiente](../04/04_Variables.md)**

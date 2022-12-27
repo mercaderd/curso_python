@@ -1,5 +1,8 @@
 # Lección 01: Introducción
 
+**[Anterior](../README.md)**
+**[Índice](../README.md)**
+
 ## ¿Qué es Python?
 
 ### Python es un lenguaje de programación potente y fácil de aprender
@@ -99,3 +102,5 @@ Más detalles en la [siguiente](02/02_Repo_Codespaces.md) lección.
 - Repo [Cursos de Python desde cero](https://github.com/mouredev/Hello-Python) de Mouredev. Repositorios en Github + Vídeos.
 - Repo [30 días de Python](https://github.com/Asabeneh/30-Days-Of-Python).
 - [Python for Everybody](https://www.py4e.com/)
+
+**[Siguiente](../02/02_Repo_Codespaces.md)**
