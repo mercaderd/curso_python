@@ -8,7 +8,7 @@ Las variables sirven para guardar datos en memoria. Una variable es un espacio e
 
 ## Nombres de variables
 
-Los nombre de variables pueden ser cortos o largos, pero se recomienda utilizar nombres descriptivos del contenido. 
+Los nombres de variable pueden ser cortos o largos, pero se recomienda utilizar nombres descriptivos del contenido. 
 
 En Pyhton deben cumplirse estas condiciones para los nombres de variables:
 - Empezar por una letra o por guión bajo.
@@ -47,7 +47,7 @@ casado = False
 
 Las varibles numéricas pueden ser:
 - Enteros
-- Con decimales o coma flotante ( Separador decimal: .)
+- Coma flotante (con decimales). Separador decimal: .
 - Complejos
 
 Declaración de variables numéricas:
