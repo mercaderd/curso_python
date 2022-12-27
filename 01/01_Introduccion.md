@@ -85,7 +85,7 @@ De forma resumida, los pasos a seguir serán:
 3. Crear un [Codespace](https://docs.github.com/es/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository) a partir del repositorio.
 4. Comenzar a desarrollar.
 
-Más detalles en la [siguiente](02_Repo_Codespaces.md) lección.
+Más detalles en la [siguiente](02/02_Repo_Codespaces.md) lección.
 
 > **Nota 1**:
 > Antes de cerrar el navegador no olvides sincronizar los cambios con el repositorio de Github desde Visual Studio Code.
