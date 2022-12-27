@@ -1,7 +1,8 @@
 # Lección 02: Hola Mundo con Github y Codespaces
 
-**[Anterior](../01/01_Introduccion.md)**
 **[Índice](../README.md)**
+
+**[Anterior](../01/01_Introduccion.md)**
 
 ## Pasos previos
 Para continuar con esta lección, previamente deberías:

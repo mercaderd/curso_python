@@ -1,7 +1,8 @@
 # Lección 03: Léxico
 
-**[Anterior](../02/02_Repo_Codespaces.md)**
 **[Índice](../README.md)**
+
+**[Anterior](../02/02_Repo_Codespaces.md)**
 
 ## Un programa en Python
 

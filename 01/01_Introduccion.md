@@ -1,6 +1,5 @@
 # Lección 01: Introducción
 
-**[Anterior](../README.md)**
 **[Índice](../README.md)**
 
 ## ¿Qué es Python?

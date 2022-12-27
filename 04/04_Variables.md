@@ -1,7 +1,8 @@
 # Lección 04: Variables
 
-**[Anterior](../03/03_Lexico.md)**
 **[Índice](../README.md)**
+
+**[Anterior](../03/03_Lexico.md)**
 
 ## Nombres de variables
 
