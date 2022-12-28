@@ -1,4 +1,4 @@
-# Lección 04: Variables
+# 📗 Lección 04: Variables
 
 **[Índice](../README.md)**
 
@@ -16,7 +16,7 @@ En Pyhton deben cumplirse estas condiciones para los nombres de variables:
 - Contener únicamente caracteres alfanuméricos o guión bajo (A-z,0-9,_).
 - Se distingue entre mayúsculas y minúsculas (Name, NAME, NAme, name son variables distintas)
 
-> **Nota:** La convención mas extendida en Python para los nombres de variables es utilizar *snake_case* (En otros lenguajes es habitual utilizar *Camel Case*). Snake case implica utilizar letras en minúsculas y separar palabras con guión bajo (_). 
+> 📝 **Nota:** La convención mas extendida en Python para los nombres de variables es utilizar *snake_case* (En otros lenguajes es habitual utilizar *Camel Case*). Snake case implica utilizar letras en minúsculas y separar palabras con guión bajo (_). 
 
 Algunos ejemplos de nombres de variables en snake case son:
 ```

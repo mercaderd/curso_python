@@ -1,8 +1,8 @@
-# Lección 01: Introducción
+# 📗 Lección 01: Introducción
 
 **[Índice](../README.md)**
 
-## ¿Qué es Python?
+## ¿Qué es Python 🐍?
 
 ### Python es un lenguaje de programación potente y fácil de aprender
 
@@ -68,7 +68,7 @@ Para empezar a utilizar Python es necesario instalar:
 ### Instalar Python 3
 Se puede intalar Python (intérprete + biblioteca estándar) desde la web oficial [python.org](https://www.python.org/downloads/). Es la instalación más básica que se puede hacer.
 
-> **Nota**:
+> 📝**Nota**:
 > Si el objetivo es trabajar en ciencia de datos, aprendizaje automático o similar, se puede instalar alguna plataforma integrada como [Anaconda](https://www.anaconda.com/), que incluirá el intérprete de Python, la biblioteca estándar y una amplia colección de bibliotecas para ciencia de datos, aprendizaje automático, inteligencia artificial, etc. 
 
 ### Entorno de desarrollo
@@ -89,10 +89,10 @@ De forma resumida, los pasos a seguir serán:
 
 Más detalles en la [siguiente](02/02_Repo_Codespaces.md) lección.
 
-> **Nota 1**:
+> 📝 **Nota 1**:
 > Antes de cerrar el navegador no olvides sincronizar los cambios con el repositorio de Github desde Visual Studio Code.
 
-> **Nota 2**:
+> 📝 **Nota 2**:
 > Al finalizar cada sesión de trabajo, elimina o para tu Codespace para no alcanzar el límite de 60 horas gratuitas cuando no estás trabajando con el.
 
 ## Recursos de aprendizaje

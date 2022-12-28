@@ -1,4 +1,4 @@
-# Lección 02: Hola Mundo con Github y Codespaces
+# 📗 Lección 02: Hola Mundo con Github y Codespaces
 
 **[Índice](../README.md)**
 
