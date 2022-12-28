@@ -25,3 +25,10 @@
 - Números
 - Cadenas de texto
 - Tipos de variables
+
+## 📗 Lección 05: [Operadores](05/05_Operadores.md)
+- Aritméticos
+- Asignación
+- Comparación
+- Lógicos
+- is e in
