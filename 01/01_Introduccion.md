@@ -95,6 +95,16 @@ Más detalles en la [siguiente](02/02_Repo_Codespaces.md) lección.
 > 📝 **Nota 2**:
 > Al finalizar cada sesión de trabajo, elimina o para tu Codespace para no alcanzar el límite de 60 horas gratuitas cuando no estás trabajando con el.
 
+## Jupyter Notebooks 
+[Jupyter Notebook](https://jupyter.org/) es un entorno web interactivo de programación diseñado en forma de cuaderno de notas. Es ampliamente utilizado en el ambito científico y de la ciencia de datos, por la sencillez y la facilidad para compartir desarrollos y algoritmos. Cada notebook contiene una o más celdas consecutivas que pueden ser de texto en formato Markdown, utilizadas para proporcionar información de contexto o dar instrucciones, o celdas de código en Python que pueden ejecutarse en un kernel de python dentro de Jupyter.
+
+Al ser un entorno web es fácil empezar a trabajar con un notebook en python desde un simple navegador web. Por ejemplo, [aquí]((https://mybinder.org/v2/gh/ipython/ipython-in-depth/HEAD?urlpath=tree/binder/Index.ipynb)) puedes ver e interactuar con un notebook de Jupyter que contiene varios tutoriales de Jupyter.
+
+Al ser un entorno web para trabajar con Jupyter Notebooks es necesario instalar un servidor Jupyter. Hay varias opciones:
+ - [Instalar](https://jupyter.org/install) Jupyter en un equipo local.
+ - Utilizar servidor Jupyter en internet como [Google Colab](https://colab.research.google.com/) o [Binder](https://mybinder.org/).
+
+
 ## Recursos de aprendizaje
 
 - [Tutorial oficial de Python](https://docs.python.org/es/3/tutorial/).
