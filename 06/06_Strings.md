@@ -1,4 +1,4 @@
-# 📗 Lección 05: Operadores
+# 📗 Lección 06: Strings - Cadenas de caracteres
 
 **[Índice](../README.md)**
 
