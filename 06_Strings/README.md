@@ -2,7 +2,7 @@
 
 **[Índice](../README.md)**
 
-**[Anterior](../05/05_Operadores.md)**
+**[Anterior](../05_Operadores/README.md)**
 
 ## Definición
 
@@ -244,4 +244,4 @@ for element in lista:
     print(element)
 print("-------------")
 ```
-**[Siguiente]()**
+**[Siguiente](../07_Bla/README.md)**

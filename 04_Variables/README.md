@@ -2,7 +2,7 @@
 
 **[Índice](../README.md)**
 
-**[Anterior](../03/03_Lexico.md)**
+**[Anterior](../03_Lexico/README.md)**
 
 Las variables sirven para guardar datos en memoria. Una variable es un espacio en memoria en el que almacenar distintos tipos de datos.
 
@@ -124,5 +124,5 @@ suma = un_numero + int(otro_numero)
 print(str(3),"+",otro_numero,"=",str(suma))
 ```
 
-**[Siguiente](../05/05_Operadores.md)**
+**[Siguiente](../05_Operadores/README.md)**
 

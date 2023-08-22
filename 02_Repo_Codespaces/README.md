@@ -2,7 +2,7 @@
 
 **[Índice](../README.md)**
 
-**[Anterior](../01/01_Introduccion.md)**
+**[Anterior](../01_Introduccion/README.md)**
 
 ## Pasos previos
 Para continuar con esta lección, previamente deberías:
@@ -136,5 +136,5 @@ Para volver a trabajar con Visual Studio Code tendrás que volver a lanzar el Co
 
 En unos segundos volverás a tener Visual Studio Code listo para continuar trabajando.
 
-**[Siguiente](../03/03_Lexico.md)**
+**[Siguiente](../03_Lexico/README.md)**
 

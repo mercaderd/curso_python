@@ -112,4 +112,4 @@ Al ser un entorno web para trabajar con Jupyter Notebooks es necesario instalar 
 - Repo [30 días de Python](https://github.com/Asabeneh/30-Days-Of-Python).
 - [Python for Everybody](https://www.py4e.com/)
 
-**[Siguiente](../02/02_Repo_Codespaces.md)**
+**[Siguiente](../02_Repe_Codespaces/README.md)**

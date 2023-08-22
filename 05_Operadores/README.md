@@ -2,7 +2,7 @@
 
 **[Índice](../README.md)**
 
-**[Anterior](../04/04_Variables.md)**
+**[Anterior](../04_Variables/README.md)**
 
 ## Aritméticos
 
@@ -97,5 +97,5 @@ print("mi" in cadena)
 print("no" in cadena)
 ```
 
-**[Siguiente](../06/06_Strings.md)**
+**[Siguiente](../06_Strings/README.md)**
 
