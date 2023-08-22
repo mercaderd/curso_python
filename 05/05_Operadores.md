@@ -97,5 +97,5 @@ print("mi" in cadena)
 print("no" in cadena)
 ```
 
-**[Siguiente]()**
+**[Siguiente](../06/06_Strings.md)**
 
