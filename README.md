@@ -32,3 +32,11 @@
 - Comparación
 - Lógicos
 - is e in
+
+## 📗 Lección 06: [Strings - Cadenas de caracteres](06/06_Strings.md)
+- Definición
+- Concatenación
+- Imprimir con formato
+- Acceso a elementos internos
+- Subcadenas o Slices
+- Métodos
