@@ -77,7 +77,7 @@ print("La cadena de texto '" + mi_cadena +"' tiene una longitud de " + str(len(m
 
 Las cadenas pueden incluir caracteres especiales. Por ejmplo, _salto de línea_ (\n), _retorno de carro_ (\r) y _tabulación_ (\t).
 
-💡 La barra invertida \ indica que el siguiente caracter es uno especial. Si se quiere utilizar una \ en el texto será necesario incluir dos barras invertidas \\.
+> 📝 **Nota:** La barra invertida \ indica que el siguiente caracter es uno especial. Si se quiere utilizar una \ en el texto será necesario incluir dos barras invertidas \\.
 
 Ejemplos:
 
@@ -181,7 +181,7 @@ print(mi_cadena[:10:-1])
 
 Los objetos cadena de texto tienen métodos muy útiles. Están disponibles para cualquier cadena. 
 
-👁‍🗨 **No modifican la cadena original, devuelven una nueva cadena.**
+> 📝 **Nota:** No modifican la cadena original, devuelven una nueva cadena.
 
 - **.capitalize()**: Retorna una copia de la cadena con el primer carácter en mayúsculas y el resto en minúsculas. 
 - **.upper()**: Devuelve copia de la cadena con todos los caracteres en mayúscula. (Si tienen forma mayúscula)

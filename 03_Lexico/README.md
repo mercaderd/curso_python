@@ -50,7 +50,7 @@ month_names = ['Januari', 'Februari', 'Maart',      # These are the
 
 Los tabuladores al principio de línea en Python son muy importantes porque se utilizan para determinar la agrupación de las declaraciones. A diferencia de otros lenguajes, la agrupación se hace con tabuladores, no con llaves, paréntesis y otros caracteres.
 
-> Nota: Los errores de tabulación hacen que el código no pueda ser interpretado por el parser y serán detectados como errores de indentación.
+> 📝 **Nota:** Los errores de tabulación hacen que el código no pueda ser interpretado por el parser y serán detectados como errores de indentación.
 
 ## Keywords
 
@@ -82,4 +82,4 @@ getattr()       locals()        repr()          zip()           compile()       
 __import__()    complex()       hasattr()       max()           round()
 ```
 
-**[Siguiente](../04/04_Variables.md)**
+**[Siguiente](../04_Variables/README.md)**
