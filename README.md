@@ -40,3 +40,16 @@
 - Acceso a elementos internos
 - Subcadenas o Slices
 - Métodos
+
+## 📗 Lección 07: [Listas](07_Listas/README.md)
+- Definición
+- Acceso a elementos
+- Sublistas o Slices
+- Comprobar elemento
+- Concatenar
+- Añadir elementos
+- Insertar elementos
+- Eliminar elementos
+- Copiar listas
+- Otros métodos
+
