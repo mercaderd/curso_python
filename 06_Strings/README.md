@@ -118,12 +118,17 @@ print(f"¿num es par? {True if num%2==0 else False}")
 
 - Se puede acceder a los caracteres individuales de una cadena utilizando un índice entre corchetes. Ej: cadena[3]
 - El índice debe ser un entero, comenzando por cero (primer caracter).
+- Se pueden especificar índices negativos y se comienza a contar desde el final de la cadena, Ej: *-1* será el índice del último caracter.
 
 ```python
 #Acceso a elementos internos mediante índice
 print(mi_cadena)
 print(mi_cadena[0]) # Acceso al primer caracter
 print(mi_cadena[3]) # Acceso al cuarto caracter
+
+# Índices negativos, -1 último caracter, -2 penúltimo, ...
+print(mi_cadena[-1])
+print(mi_cadena[-2])
 
 # Utilizar un índice mayor que la longitud de la cadena provoca un error
 print(mi_cadena[100]) # ¡Ojo! ¡Esto de error!
@@ -140,6 +145,7 @@ print(mi_cadena[len(mi_cadena) - 1])
 ## Subcadenas o slices
 
 - También se puede acceder a partes de una cadena de texto (slices). Entre corchetes se indica el índice inicial y el índice final separados por *:*. Ejemplo: mi_cadena[2:5]
+- Incluye todos los caracteres del índice inicial al final (sin incluir el final). 
 - Si se deja en blanco el índice inicial, se considera el inicio de la cadena.
 - Si se deja en blanco el índie final, se considera el final de la cadena.
 - Si se dejan ambos en blanco, se considera la cadena completa.
@@ -153,10 +159,10 @@ print(mi_cadena[10:])
 print(mi_cadena[:])
 ```
 
-- Se pueden especificar índices negativos y se comienza a contar desde el final de la cadena, Ej: *-1* será el índice del penúltimo caracter.
+- Se pueden especificar índices negativos y se comienza a contar desde el final de la cadena, Ej: *-1* será el índice del último caracter.
 
 ```python
-# Indicando números negativos el índice comienza a contar desde el final de la cadena. Ej: -1 será el índice del penúltimo caracter.
+# Indicando números negativos el índice comienza a contar desde el final de la cadena. Ej: -1 será el índice del último caracter.
 print(mi_cadena[10:-1])
 ```
 

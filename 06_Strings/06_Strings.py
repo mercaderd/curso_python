@@ -69,6 +69,10 @@ print(mi_cadena)
 print(mi_cadena[0]) # Acceso al primer caracter
 print(mi_cadena[3]) # Acceso al cuarto caracter
 
+# Índices negativos, -1 último caracter, -2 penúltimo, ...
+print(mi_cadena[-1])
+print(mi_cadena[-2])
+
 # Utilizar un índice mayor que la longitud de la cadena provoca un error
 # print(mi_cadena[100]) # ¡Ojo! ¡Esto de error!
 
@@ -83,7 +87,7 @@ print(mi_cadena[:10])
 print(mi_cadena[10:])
 print(mi_cadena[:])
 
-# Indicando números negativos el índice comienza a contar desde el final de la cadena. Ej: -1 será el índice del penúltimo caracter.
+# Indicando números negativos el índice comienza a contar desde el final de la cadena. Ej: -1 será el índice del último caracter.
 print(mi_cadena[10:-1])
 
 # Seleccionar uno de cada dos caracteres entre el rango especificado
