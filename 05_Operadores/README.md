@@ -82,8 +82,7 @@ print((3>2) and (5>1)) # True
 
 El operador *is* devuelve *True* si ambos operandos son el mismo objeto.
 
-> 📝 **Nota:**
-> Los operadores is y == no deben confundirse. Mientras el primero es para comprobar si dos operandos son el mismo objeto, el segundo es para comporar si tienen el mismo valor.
+> 📝 **Nota:** Los operadores is y == no deben confundirse. Mientras el primero es para comprobar si dos operandos son el mismo objeto, el segundo es para comporar si tienen el mismo valor.
 
 El operador *in* sirve para comprobar si un operando está en una secuencia (cadenas, lista, tuplas).
 

@@ -250,4 +250,4 @@ for element in lista:
     print(element)
 print("-------------")
 ```
-**[Siguiente](../07_Bla/README.md)**
+**[Siguiente](../07_Listas/README.md)**
