@@ -121,3 +121,6 @@ print(f"Mi lista: {mi_lista_completa}. Se ha eliminado el elemento: {elemento}")
 
 mi_lista_completa.clear() 
 print(f"Mi lista: {mi_lista_completa}")
+
+# Eliminando una lista
+del mi_lista_completa

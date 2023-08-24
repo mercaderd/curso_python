@@ -188,6 +188,7 @@ Hay varios métodos para eliminar elementos de una lista:
 - *.remove(item)*: Elimina el elemento *item*. Si hay varios elementos iguales, elimina el primero de ellos.
 - *.pop(index)*: Elimina el elemento en la posición *index* o el útimo elemento si no se especifica. Retorna el elemento eliminado.
 - *.clear()*: Elimina todos los elementos de una lista.
+- *del*: Elimina una lista, o cualquier otro tipo de objeto.
 
 ```python
 # Eliminar elementos de una lista
@@ -206,6 +207,9 @@ print(f"Mi lista: {mi_lista_completa}. Se ha eliminado el elemento: {elemento}")
 
 mi_lista_completa.clear() 
 print(f"Mi lista: {mi_lista_completa}")
+
+# Eliminando una lista
+del mi_lista_completa
 ```
 
 ## Copiando listas
@@ -234,4 +238,4 @@ print(lista1)
 - *.index(item)*: Devuelve el índice del elemento *item* en una lista.
 - *.count(item)*: Devuelve el número de veces que el elemento *item* está en una lista.
 
-**[Siguiente](../08_Bla/README.md)**
+**[Siguiente](../08_Tuplas/README.md)**

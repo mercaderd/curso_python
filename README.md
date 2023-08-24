@@ -53,3 +53,12 @@
 - Copiar listas
 - Otros métodos
 
+## 📗 Lección 08: [Tuplas](08_Tuplas/README.md)
+- Definición
+- Acceso a elementos
+- Sublistas o Slices
+- De tupla a lista y viceversa
+- Comprobar elemento
+- Concatenar
+- Eliminar tupla
+
