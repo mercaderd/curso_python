@@ -1,174 +1,200 @@
-# 📗 Lección 09: Conjuntos (Sets)
+# 📗 Lección 10: Diccionarios
 
 **[Índice](../README.md)**
 
-**[Anterior](../08_Tuplas/README.md)**
+**[Anterior](../09_Conjuntos/README.md)**
+
+# 📗 Lección 10: Diccionarios
 
 ## Definición
 
 Hay cuatro estructuras de datos compuestas en Python: *Listas*, *Tuplas*, *Conjuntos* y *Diccionarios*.
 
-**Los conjuntos o sets** :
-- Son una colección de elementos.
+**Los diccionarios** :
+- Son una colección de elementos organizados por pares clave, valor.
 - Son mutables, se pueden añadir y quitar elementos.
-- No estan ordenados, ni indexados.
-- No permite valores duplicados.
+- Estan ordenados desde Python 3.6.
 - Pueden estar vacíos.
-- Puede contener elementos de distintos tipos, es decir cualquier tipo de objeto.
+- Los valores pueden ser elementos de distintos tipos, es decir cualquier tipo de objeto.
 
-> 📝 **Nota:** Se pueden asimilar a la definición matemática de conjunto.
+Se pueden crear vacíos con el contructor dict() o con llaves {}, o con elementos utilizando llaves {}.
 
-Se pueden crear vacíos con el contructor set(), o con elementos utilizando el constructor set() o llaves {}.
+ 📝 **Nota:** En Python las llaves {} se utilizan para conjuntos y diccionarios. Unas llaves sin elementos dentro creará un diccionario y no un conjunto.
 
-> 📝 **Nota:** En Python las llaves {} se utilizan para conjuntos y diccionarios. Unas llaves sin elementos dentro creará un diccionario y no un conjunto.
+ ```python
+ # Creación de diccionarios
 
-```python
-# Creación de conjuntos
+diccionario1 = dict() # Esto es un diccionario vacio.
+diccionario2 = {} # # Esto es otro diccionario vacío.
 
-conjunto1 = set() # Esto es un conjunto vacio
-conjunto2 = {} # ¿Conjunto vacio? Ojo: Esto crea un diccionario vacío porque las llaves también se usan en Python para crear diccionarios.
+print(diccionario1)
+print(diccionario2)
 
-print(conjunto1)
-print(conjunto2)
+print(type(diccionario1))
+print(type(diccionario2))
 
-print(type(conjunto1))
-print(type(conjunto2)) #Ojo, esto es un diccionario vacío
+# Creación de diccionarios con valores iniciales
 
-# Creación de conjuntos con valores iniciales
+diccionario3 = {"clave1": "valor1", "clave2": "🎈", "clave3": 3}  # Los valores pueden contener cualquier tipo de objetos
 
-conjunto3 = {"elemento1", "elemento2", "elemento3", 4}  # No pueden contener elementos repetidos
-conjunto4 = set(["queso", "plátano", "🎈", 35, 44, 2.2, None, "uno","🎈"]) # ¿Qué ocurren si se crean a partir de una lista con elementos repetidos?
+print(diccionario3)
 
-print(conjunto3)
-print(conjunto4)
+print(type(diccionario3)) 
 
-print(type(conjunto3)) 
-print(type(conjunto4)) # Si se utiliza el constructor set() para crear un conjunto a partir de una lista con elementos repetidos, el conjunto se creará eliminando elementos repetidos.
+persona = {
+    'nombre':'Manuel',
+    'apellido':'Ejemplar',
+    'edad':26,
+    'país':'España',
+    'casado':True,
+    'conocimientos':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'direccion':{
+        'calle':'De la protección de datos',
+        'cp':'28000'
+    }
+    }
+
+print(persona)
 ```
 
-Se puede utilizar la función built-in *len()* para saber el número de elementos de un conjunto.
-
+Se puede utilizar la función built-in *len()* para saber el número de pares clave,valor de un diccionario.
 
 ```python
-# Número de elementos de un conjunto
+# Número de elementos de un diccionario
 
-print("Conjunto:", conjunto3)
-print(f"Número de elementos: {len(conjunto3)}")
+print("Diccionario:", diccionario3)
+print(f"Número de pares clave,valor: {len(diccionario3)}")
 
-print("Tupla:", conjunto4)
-print(f"Número de elementos: {len(conjunto4)}")
+print("Persona", persona)
+print(f"Número de pares clave,valor: {len(persona)}")
 ```
 
-## Accediendo a los elementos de un conjunto
+## Accediendo a los elementos de un diccionario
 
-Los elementos de un conjunto no están ordenados, ni indexados. Para acceder a los elementos es necesario utilizar bucles.
+Se puede acceder a los elementos de un conjunto referenciándolos por la clave.
 
-## Comprobando si un elemento está en un conjunto
+```python
+# Accediendo a los elementos de un diccionario
+
+print(diccionario3['clave1'])
+print(diccionario3['clave2'])
+print(diccionario3['clave3'])
+
+print(persona['apellido'])
+```
+
+Acceder por clave dará un error cuando la clave no existe. Para evitarlo, se puede comprobar la existencia de la clave antes de intentar acceder o utilizar el método get(), que devuelve el valor si la clave existe o *None* si la clave no existe.
+
+> 📝 **Nota:** **NoneType** es un tipo de dato especial de variable en Python cuyo único valor posible es *None*. Se puede asignar a cualquier tipo de objeto para indicar que está definido pero no tiene ningún valor.
+
+```python
+print(persona.get('nombre'))
+print(persona.get('apellido'))
+print(persona.get('hijos')) # Daría error si se intenta hacer persona['hijos']
+```
+
+## Comprobando si una clave está en un diccionario
+
 - Se puede utilizar el operador *in*.
 
 ```python
-# Comprobando si un elemento está en un conjunto
+# Comprobando si una clave está en un diccionario
 
-globo_en_conjunto = "globo" in conjunto4
-print(globo_en_conjunto)
+print('apellido' in persona)
+print('titulación' in persona)
 
-none_en_conjunto = None in conjunto4
-print(none_en_conjunto)
+# Nos podemos ayudar de un condicional (que veremos en detalle más adelante)
 
-num_en_conjunto = 35 in conjunto4
-print(num_en_conjunto)
+if 'apellido' in persona:
+    print(f"El apellido de esta persona es {persona['apellido']}") # Ojo con comillas dobles/simples
 
-cabra_en_conjunto = "cabra" in conjunto4
-print(cabra_en_conjunto)
+if 'titulación' in persona:
+    print(f"La titulación de esta persona es {persona['titulación']}") # Ojo con comillas dobles/simples
 ```
 
-## Añadiendo y eliminando elementos de un conjunto
+## Añadiendo o modificando elementos de un diccionario
 
-- *add()* Añade un elemento al conjunto.
-- *update()* Añade varios elementos a un conjunto, los elementos de una lista.
-- *remove()* Elimina un elemento del conjunto. Si el elemento no existe dará un error.
-- *discard()* Elimina un elemento de un conjunto, si existe. No dará error si el elemento no existe.
-- *pop()* elimina un elemento aleatorio de un conjunto y lo devuelve.
-- *clear()* elimina todos los elementos de un conjunto
+- Se pueden añadir pares clave,valor a un diccionario simplemente referenciando una nueva clave. Ej: *diccionario['nuevaclave']=nuevovalor*
+- Se puede modificar el valor asignado a una clave, referenciándola y asignando un nuevo valor. Ej: *diccionario['clave1']=nuevovalor1*
+
 
 ```python
-# Añadiendo elementos a un conjunto
+## Añadiendo o modificando elementos de un diccionario
 
-frutas = {"plátano", "tomate", "melón", "sandía", "naranja"}
-print(frutas)
-print(f'Número de elementos: {len(frutas)}')
-frutas.add("mandarina")
-print(frutas)
-print(f'Número de elementos: {len(frutas)}')
-frutas.update(["fresa","melocotón","ciruela"])
-print(frutas)
-print(f'Número de elementos: {len(frutas)}')
+print(persona)
+persona['titulación'] = 'Ingeniero Aeroespacial'
+persona['conocimientos'] = ['aerodinámica', 'cálculo', 'física', 'álgebra', 'aviónica']
+print(persona)
 ```
+
+## Eliminando pares clave,valor de un diccionario
+
+- *pop(clave)*: Elimina el elemento cuya clave es *clave*.
+- *popitem()*: Elimina el último elemento y lo devuelve.
+
 
 ```python
-# Eliminando elementos de un conjunto
+# Eliminando pares clave,valor de un diccionario
 
-frutas.remove("platano") # Dará error, el elemento platano no existe en la lista
+print(persona)
+persona.pop('casado')
+print(persona)
+eliminado = persona.popitem()
+print(persona)
+print(eliminado)
 ```
+
+## Obteniendo una lista de elementos de un diccionario
+
+- El método *items()* devuelve una vista iterable con los elementos (pares clave,valor) del diccionario. Una colección de tuplas (clave,valor) que puede convertirse en una lista con *list()*, aunque no siempre es necesario convertirla.
+- El método *keys()* devuelve una vista iterable con las claves del diccionario. Una colección de claves que puede convertirse en una lista con *list()*, aunque no siempre es necesario convertirla.
+- El método *values()* devuelve una vista iterable con los valores del diccionario. Una colección de valores que puede convertirse en una lista con *list()*, aunque no siempre es necesario convertirla.
 
 ```python
-frutas.discard("granada") # Aunque el elemento no existe, no da error
-print(frutas)
-print(f'Número de elementos: {len(frutas)}')
-frutas.remove("plátano")
-print(frutas)
-print(f'Número de elementos: {len(frutas)}')
-eliminado = frutas.pop()
-print(f'El elemento eliminado es: {eliminado}')
-frutas.clear()
-print(frutas)
-print(f'Número de elementos: {len(frutas)}')
+# Obteniendo una lista de elementos de un diccionario
+
+lista_elementos = list(persona.items())
+print(persona)
+print(type(persona))
+print(lista_elementos)
+print(type(lista_elementos))
+print(lista_elementos[1])
+
+lista_claves = list(persona.keys())
+print(type(lista_claves))
+print(lista_claves)
+
+lista_valores = list(persona.values())
+print(type(lista_valores))
+print(lista_valores)
 ```
 
-## Eliminando un conjunto
+## Copiando un diccionario
 
-- *del* elimina un conjunto, destruye el objeto.
+- *copy()*: Devuelve una copia del diccionario.
+
+> 📝 **Nota:** Para copiar un diccionario hay que utilizar el método *copy()*. Si se hace una asignación a otra variable no estaremos creando un nuevo diccionario sino una referencia al diccionario, y cualquer cambio en uno de los diccionarios se verá en el otro.
 
 ```python
-# Eliminando un conjunto
+persona = {
+    'nombre':'Manuel',
+    'apellido':'Ejemplar',
+    'edad':26,
+    'país':'España',
+    'casado':True,
+    'conocimientos':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'direccion':{
+        'calle':'De la protección de datos',
+        'cp':'28000'
+    }
+    }
 
-del conjunto4
-print(onjunto4)
+print(f"Esto es persona: {persona}")
+
+persona2 = persona # Esto no crea una copia sino una nueva referencia
+
+persona2['casado'] = False
+print(f"Esto es persona: {persona}")
 ```
 
-## Uniendo conjuntos
-
-Se pueden unir conjuntos utilizando los métodos *union* o *update*.
-
-- *union* devuelve un nuevo conjunto con la unión.
-- *update* modifica el conjunto sobre el que se ejecuta el método (se utiliza también para añadir elementos).
-
-```python
-## Uniendo conjuntos
-
-conjunto3 = {"elemento1", "elemento2", "elemento3", 4}  # No pueden contener elementos repetidos
-conjunto4 = set(["queso", "plátano", "🎈", 35, 44, 2.2, None, "uno","🎈"]) # ¿Qué ocurren si se crean a partir de una lista con elementos repetidos?
-
-conjunto5 = conjunto3.union(conjunto4)
-print(conjunto3)
-print(conjunto4)
-print(conjunto5)
-
-conjunto3.update(conjunto4)
-print(conjunto3)
-```
-
-## Intersección entre conjuntos (Encontrando elementos comunes)
-
-- *intesection()* Devuelve un conjunto con los elementos comunes.
-
-```python
-## Encontrando elementos comunes
-
-print(conjunto4)
-print(conjunto5)
-print(conjunto4.intersection(conjunto5))
-```
-
-
-**[Siguiente](../10_Diccionarios/README.md)**
+**[Siguiente](../11_Condicionales/README.md)**

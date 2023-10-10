@@ -25,3 +25,6 @@
 
 
 ## 📗 Lección 09: [Conjuntos](09_Conjuntos/README.md)
+
+
+## 📗 Lección 10: [Diccionarios](09_Diccionarios/README.md)
