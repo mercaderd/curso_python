@@ -237,7 +237,7 @@ try:
         print("Número negativo")
 
 except ValueError:
-    print("No es un número. Debes introducir un número.") # Esto se ejecuta si ocurre cualquier tipo de excepción.
+    print("No es un número. Debes introducir un número.") # Esto se ejecuta si ocurre una excepción de tipo ValueError.
 ```
 
 **[Siguiente](../12_Bucles/README.md)**
