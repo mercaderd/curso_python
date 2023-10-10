@@ -22,6 +22,7 @@ if condicion:
     and also this
 ```
 
+
 ```python
 # Condicional if
 
@@ -78,7 +79,6 @@ elif a > 5:
 else:
     print("El número es 0")
 
-
 print("Resultado del segundo condicional:")
 a = 100
 if a < 0:
@@ -110,7 +110,7 @@ print('Positivo') if a >= 0 else print('Negativo')
 
 Los condicionales se pueden anidar como en cualquier otro lenguaje de programación. Sin embargo lo recomendable es no tener que recurrir a condicionales anidados.
 
-````python
+```python
 if condicion:
     haz esto
     if condicion2:
