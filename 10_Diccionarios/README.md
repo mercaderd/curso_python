@@ -4,8 +4,6 @@
 
 **[Anterior](../09_Conjuntos/README.md)**
 
-# 📗 Lección 10: Diccionarios
-
 ## Definición
 
 Hay cuatro estructuras de datos compuestas en Python: *Listas*, *Tuplas*, *Conjuntos* y *Diccionarios*.
