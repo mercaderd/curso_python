@@ -28,3 +28,8 @@
 
 
 ## 📗 Lección 10: [Diccionarios](10_Diccionarios/README.md)
+
+
+## 📗 Lección 11: [Condicionales](11_Condicionales/README.md)
+
+
