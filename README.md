@@ -42,7 +42,7 @@
 ## 📗 Lección 14: [Módulos y paquetes](14_Modulos/README.md)
 
 
-## 📗 Lección 15: [Entornos Virtuales y Gestor de Paquetes](15_EntornosVirtuales/README.md)
+## 📗 Lección 15: [Gestor de Paquetes y Entornos Virtuales](15_EntornosVirtuales/README.md)
 
 
 
