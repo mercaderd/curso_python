@@ -190,7 +190,7 @@ Los módulos pueden (y suelen) organizarse en un tipo de carpetas especiales que
 
 Si el paquete o algún módulo del paquete es importado, el código en __init__.py se ejecutará. Se utiliza cuando hay que incializar algo para utilizar el paquete.
 
-Los módulos dentro de un paquete se pueden importar utilizando notación con punto. Ej: *import paquete.modulo*, *from paquete import modulo*, *from paquete.modulo import clase/funcion*, *from paquete import **.
+Los módulos dentro de un paquete se pueden importar utilizando notación con punto. Ej: *import paquete.modulo*, *from paquete import modulo*, *from paquete.modulo import clase/funcion*, *from paquete import* *.
 
 ![Estructura paquete](./media/paquetes.png)
 
