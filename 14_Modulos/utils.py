@@ -9,10 +9,10 @@ import secrets
 import sys
 
 
-def password_gen(length, 
-                 alphabet = string.punctuation 
-                 + string.ascii_lowercase 
-                 + string.ascii_uppercase 
+def password_gen(length,
+                 alphabet = string.punctuation
+                 + string.ascii_lowercase
+                 + string.ascii_uppercase
                  + string.digits):
     '''Genera una contraseña segura de longitud length
         Parámetros por clave opcionales: 

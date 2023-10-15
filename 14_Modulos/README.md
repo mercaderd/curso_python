@@ -60,7 +60,7 @@ from utils import password_gen
 print(password_gen(length = 20))
 ```
 
-### Identificando si un módulo se ejecuta independientemente o es importado
+### Atributos de módulo
 
 El atributo *__name__* da acceso al nombre del módulo, pero si el módulo es ejecutado independientemente el atributo tendrá el valor *'__main__'* en vez de el nombre del módulo. Esto permite definir cómo debe ejecutarse el módulo cuando se ejecuta de forma independientes.
 
@@ -95,6 +95,15 @@ def password_gen(length,
 # Lo que hay a partir del siguiente if únicamente se ejutará si el módulo es lanzado directamente, pero no si el módulo es importado
 if __name__ == '__main__':
     print(password_gen(length = 10)) 
+```
+
+El atributo *__file__* contiene el path al archivo del módulo.
+
+```python
+import utils
+
+print(utils.__name__)
+print(utils.__file__)
 ```
 
 ### Importando algunos módulos Built-in
@@ -153,6 +162,35 @@ def password_gen(length,
 if __name__ == '__main__':
     print(password_gen(length = int(sys.argv[1])))
 ```
+
+Desde la línea de comando se puede comprobar cómo funciona:
+
+```console
+$ python utils.py 10
+waK9xj5qUK
+```
+
+#### Módulo Math
+
+Contiene constantes y funciones con operaciones matemáticas.
+
+```python
+import math
+print(math.pi)           # 3.141592653589793, pi constant
+print(math.sqrt(2))      # 1.4142135623730951, square root
+print(math.pow(2, 3))    # 8.0, exponential function
+print(math.floor(9.81))  # 9, rounding to the lowest
+print(math.ceil(9.81))   # 10, rounding to the highest
+print(math.log10(100))   # 2, logarithm with 10 as base
+```
+
+## Paquetes
+
+Los módulos pueden (y suelen) organizarse en un tipo de carpetas especiales que se llaman paquetes. Dentro de estas carpetas deben existir necesariamente un archivo llamado __init__.py, aunque esté vacío. No es obligatorio que todos los módulos pertenezcan a un paquete.
+
+Si el paquete o algún módulo del paquete es importado, el código en __init__.py se ejecutará. Se utiliza cuando hay que incializar algo para utilizar el paquete.
+
+Los módulos dentro de un paquete se pueden importar utilizando notación con punto. Ej: *import paquete.modulo*, *from paquete import modulo*, *from paquete.modulo import clase/funcion*, *from paquete import **.
 
 
 
