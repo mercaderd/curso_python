@@ -36,10 +36,13 @@
 ## 📗 Lección 12: [Bucles](12_Bucles/README.md)
 
 
-## 📗 Lección 13: [Bucles](13_Funciones/README.md)
+## 📗 Lección 13: [Funciones](13_Funciones/README.md)
 
 
-## 📗 Lección 14: [Bucles](14_Modulos/README.md)
+## 📗 Lección 14: [Módulos y paquetes](14_Modulos/README.md)
+
+
+## 📗 Lección 15: [Entornos Virtuales y Gestor de Paquetes](15_EntornosVirtuales/README.md)
 
 
 
