@@ -33,7 +33,13 @@
 ## 📗 Lección 11: [Condicionales](11_Condicionales/README.md)
 
 
-## 📗 Lección 12: [Bucles](11_Condicionales/README.md)
+## 📗 Lección 12: [Bucles](12_Bucles/README.md)
+
+
+## 📗 Lección 13: [Bucles](13_Funciones/README.md)
+
+
+## 📗 Lección 14: [Bucles](14_Modulos/README.md)
 
 
 
