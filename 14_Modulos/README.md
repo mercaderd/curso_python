@@ -192,6 +192,7 @@ Si el paquete o algún módulo del paquete es importado, el código en __init__.
 
 Los módulos dentro de un paquete se pueden importar utilizando notación con punto. Ej: *import paquete.modulo*, *from paquete import modulo*, *from paquete.modulo import clase/funcion*, *from paquete import **.
 
+![Estructura paquete](./media/paquetes.png)
 
 
 **[Siguiente](../15_EntornosVirtuales/README.md)**
