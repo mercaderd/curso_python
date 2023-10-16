@@ -169,11 +169,11 @@ print(nombres)
 ```python
 # Ejemplo de entrada de datos por teclado
 
-entrada = input("Introduce un número: ")
+entrada = input("Introduce un número entero: ")
 
-a = int(entrada) # Esto dará error. Excepción de tipo ValueError si el texto introducido no se puede convertir(casting de variable)
+if entrada.isnumeric():
+    a = int(entrada)
 
-if type(a) == int or type(a) == float:
     if a > 0 and a < 5:
         print("Número positivo menor de 5")
     elif a >= 5:
@@ -183,7 +183,7 @@ if type(a) == int or type(a) == float:
     else:
         print("Número negativo")
 else:
-    print("No es un número")
+    print("No es un número entero")
 ```
 
 ## Un poco de gestión de excepciones (A LO BESTIA)
