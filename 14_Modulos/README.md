@@ -110,7 +110,7 @@ print(utils.__file__)
 
 #### Módulo OS
 
-Con el módulo *OS* se pueden realizar muchas taréas típicas de sistema operativo.
+Con el módulo [*OS*](https://docs.python.org/es/3.10/library/os.html) se pueden realizar muchas taréas típicas de sistema operativo.
 
 ```python
 # import the module
@@ -127,7 +127,7 @@ os.rmdir()
 
 #### Módulo SYS
 
-El módulo *sys* proporciona funciones y variables del entorno de ejecución de python. La función *sys.argv* devuelve una lista de argumentos de línea de comandos pasados a un script de Python. El elemento en el índice 0 de esta lista es siempre el nombre del script, en el índice 1 está el argumento pasado desde la línea de comandos.
+El módulo [*sys*](https://docs.python.org/es/3.10/library/sys.html) proporciona funciones y variables del entorno de ejecución de python. La función *sys.argv* devuelve una lista de argumentos de línea de comandos pasados a un script de Python. El elemento en el índice 0 de esta lista es siempre el nombre del script, en el índice 1 está el argumento pasado desde la línea de comandos.
 
 ```python
 # file utils.py
@@ -172,7 +172,7 @@ waK9xj5qUK
 
 #### Módulo Math
 
-Contiene constantes y funciones con operaciones matemáticas.
+El módulo [*math*](https://docs.python.org/es/3.10/library/math.html) contiene constantes y funciones con operaciones matemáticas.
 
 ```python
 import math
