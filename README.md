@@ -45,6 +45,16 @@
 ## 📗 Lección 15: [Gestor de Paquetes y Entornos Virtuales](15_EntornosVirtuales/README.md)
 
 
+## 📗 Lección 16: [Ficheros](16_Ficheros/README.md)
 
 
+## 📗 Lección 17: [Peticiones HTTP y consumo de APIs](17_HTTP/README.md)
 
+
+## 📗 Lección 18: [Web Scrapping](18_WebScrapping/README.md)
+
+
+## 📗 Lección 19: [Programación Orientada a Objetos](19_Objetos/README.md)
+
+
+## 📗 Lección 20: [Bases de datos con SQLAlchemy](20_BBDD_ORM/README.md)
