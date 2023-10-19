@@ -17,7 +17,7 @@ Para crear un módulo se meten nuevas funciones/clases en un archivo *.py*, por 
 ```python
 # file utils.py
 
-import strings
+import string
 import secrets
 
 

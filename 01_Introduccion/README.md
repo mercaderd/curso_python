@@ -10,7 +10,7 @@ Python es un lenguaje de programación interpretado (el código no se compila) c
 
 Es un lenguaje sencillo, fácil, muy legible y con una curva de aprendizaje muy buena, por lo que es una buena opción para aprender a programar desde cero.
 
-El origen de Python se remonta a los 90, creado por el holandés Gudo van Rossum y que le puso el nombre en honor a una serie de televisión creada por el grupo cómico Monty Python (La vida de Brian).
+El origen de Python se remonta a los 90, creado por el holandés Guido van Rossum y que le puso el nombre en honor a una serie de televisión creada por el grupo cómico Monty Python (La vida de Brian).
 
 Es el lenguaje de programación más popular en los últimos años (en dura pugna con Javascript según el ranking que se consulte).
 
