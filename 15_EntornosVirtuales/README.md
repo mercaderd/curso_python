@@ -17,21 +17,39 @@ $ pip --version
 pip 23.2.1 from /usr/local/python/3.10.8/lib/python3.10/site-packages/pip (python 3.10)
 ```
 
-Instalar un paquete es muy sencillo, por ejemplo vamos a instalar el paquete *requests*, utilizado para trabajar con perticiones HTTP de forma sencilla.
+Instalar un paquete es muy sencillo, por ejemplo vamos a instalar el paquete *docxtpl*, utilizado para trabajar plantillas de documentos en docx.
 
 ```console
 $ pip install requests
-Requirement already satisfied: requests in /home/codespace/.local/lib/python3.10/site-packages (2.31.0)
-Requirement already satisfied: charset-normalizer<4,>=2 in /home/codespace/.local/lib/python3.10/site-packages (from requests) (3.2.0)
-Requirement already satisfied: idna<4,>=2.5 in /home/codespace/.local/lib/python3.10/site-packages (from requests) (3.4)
-Requirement already satisfied: urllib3<3,>=1.21.1 in /home/codespace/.local/lib/python3.10/site-packages (from requests) (2.0.5)
-Requirement already satisfied: certifi>=2017.4.17 in /home/codespace/.local/lib/python3.10/site-packages (from requests) (2023.7.22)
-
-[notice] A new release of pip is available: 23.2.1 -> 23.3
-[notice] To update, run: python -m pip install --upgrade pip
+Collecting docxtpl
+  Downloading docxtpl-0.16.7-py2.py3-none-any.whl (28 kB)
+Collecting jinja2
+  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 6.2 MB/s eta 0:00:00
+Collecting python-docx
+  Downloading python_docx-1.0.1-py3-none-any.whl (237 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 237.4/237.4 kB 12.3 MB/s eta 0:00:00
+Collecting lxml
+  Downloading lxml-4.9.3-cp310-cp310-manylinux_2_28_x86_64.whl (7.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 66.6 MB/s eta 0:00:00
+Collecting six
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting docxcompose
+  Downloading docxcompose-1.4.0.tar.gz (20 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: setuptools in ./venv/lib/python3.10/site-packages (from docxcompose->docxtpl) (63.2.0)
+Collecting babel
+  Downloading Babel-2.13.0-py3-none-any.whl (10.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 56.1 MB/s eta 0:00:00
+Collecting typing-extensions
+  Downloading typing_extensions-4.8.0-py3-none-any.whl (31 kB)
+Collecting MarkupSafe>=2.0
+  Downloading MarkupSafe-2.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Using legacy 'setup.py install' for docxcompose, since package 'wheel' is not installed.
+Installing collected packages: typing-extensions, six, MarkupSafe, lxml, babel, python-docx, jinja2, docxcompose, docxtpl
+  Running setup.py install for docxcompose ... done
+Successfully installed MarkupSafe-2.1.3 babel-2.13.0 docxcompose-1.4.0 docxtpl-0.16.7 jinja2-3.1.2 lxml-4.9.3 python-docx-1.0.1 six-1.16.0 typing-extensions-4.8.0
 ```
-
-En el ejemplo anterior, requests ya estaba instalado en el sistema. Pero de no haberlo estado se hubiera instalado.
 
 ### Listar paquetes instalados
 
@@ -39,18 +57,19 @@ Para listar los paquetes instalados se utiliza *pip list*.
 
 ```console
 $ pip list
-Package                   Version
-------------------------- ------------
-anyio                     4.0.0
-argon2-cffi               23.1.0
-argon2-cffi-bindings      21.2.0
-arrow                     1.2.3
-asttokens                 2.4.0
-async-lru                 2.0.4
-attrs                     23.1.0
-Babel                     2.12.1
-...
-...
+Package           Version
+----------------- -------
+Babel             2.13.0
+docxcompose       1.4.0
+docxtpl           0.16.7
+Jinja2            3.1.2
+lxml              4.9.3
+MarkupSafe        2.1.3
+pip               22.2.2
+python-docx       1.0.1
+setuptools        63.2.0
+six               1.16.0
+typing_extensions 4.8.0
 ```
 
 ### Obtener información sobre un paquete
@@ -58,17 +77,17 @@ Babel                     2.12.1
 Se obtiene información sobre un paquete con *pip show*.
 
 ```console
-$ pip show requests
-Name: requests
-Version: 2.31.0
-Summary: Python HTTP for Humans.
-Home-page: https://requests.readthedocs.io
-Author: Kenneth Reitz
-Author-email: me@kennethreitz.org
-License: Apache 2.0
-Location: /home/codespace/.local/lib/python3.10/site-packages
-Requires: certifi, charset-normalizer, idna, urllib3
-Required-by: jupyterlab_server, nbdime
+$ pip show Jinja2
+Name: Jinja2
+Version: 3.1.2
+Summary: A very fast and expressive template engine.
+Home-page: https://palletsprojects.com/p/jinja/
+Author: Armin Ronacher
+Author-email: armin.ronacher@active-4.com
+License: BSD-3-Clause
+Location: /workspaces/curso_python/15_EntornosVirtuales/venv/lib/python3.10/site-packages
+Requires: MarkupSafe
+Required-by: docxtpl
 ```
 
 ## Entornos virtuales
@@ -127,8 +146,6 @@ Si el fichero *requirements.txt* está disponible, se pueden instalar todos los 
 ```console
 (my_venv) C:\Users\User\Documents\user1\proyecto1> pip install -r requirements.txt
 ```
-
-
 
 
 **[Siguiente](../16_Ficheros/README.md)**
