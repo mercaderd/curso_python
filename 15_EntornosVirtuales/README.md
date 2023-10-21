@@ -17,7 +17,7 @@ $ pip --version
 pip 23.2.1 from /usr/local/python/3.10.8/lib/python3.10/site-packages/pip (python 3.10)
 ```
 
-Instalar un paquete es muy sencillo, por ejemplo vamos a instalar el paquete *docxtpl*, utilizado para trabajar plantillas de documentos en docx.
+Instalar un paquete es muy sencillo, por ejemplo vamos a instalar el paquete [*docxtpl*](https://docxtpl.readthedocs.io/en/latest/), utilizado para trabajar plantillas de documentos en docx.
 
 ```console
 $ pip install requests
