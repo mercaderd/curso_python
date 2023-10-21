@@ -1,0 +1,18 @@
+{
+    "nombre": "Manuel",
+    "apellido": "Ejemplar",
+    "edad": 26,
+    "país": "España",
+    "casado": true,
+    "conocimientos": [
+        "JavaScript",
+        "React",
+        "Node",
+        "MongoDB",
+        "Python"
+    ],
+    "direccion": {
+        "calle": "De la protección de datos",
+        "cp": "28000"
+    }
+}

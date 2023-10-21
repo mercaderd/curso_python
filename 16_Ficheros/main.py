@@ -1,6 +1,8 @@
 # Ficheros
+
 import os
 import json
+import csv
 
 # Abrir ficheros
 
@@ -101,7 +103,9 @@ persona = {
    }
    }
 
-persona_json = json.dumps(persona, indent = 4, ensure_ascii=False) # Convierte el diccionario en una cadena JSON
+persona_json = json.dumps(persona,
+                          indent = 4,
+                          ensure_ascii=False) # Convierte el diccionario en una cadena JSON
 print(persona_json)
 
 # Guardar el fichero JSON
@@ -127,3 +131,30 @@ with open('./persona.json', encoding='utf-8') as f:
     persona = json.load(f)
 
 print(persona)
+
+# Archivos CSV - Lectura
+
+with open('./ejemplo.csv', encoding='utf-8') as f:
+    lineas = csv.reader(f)
+    for i,linea in enumerate(lineas):
+        if i == 0:
+            print(f'Columnas: {", ".join(linea)}')
+        elif i < 10:
+            print(f'Datos {i}: {", ".join(linea)}')
+
+
+# Archivos CSV - Escritura
+
+nombres_columnas = ["nombre", "apellido", "edad"]
+linea1 = ["pedro", "moreno", "65"]
+linea2 =["alberto", "garcia", "29"]
+resto_de_lineas =[["nombre3", "apellido4", "edad4"],
+                  ["nombre4", "apellido5", "edad5"],
+                  ["nombre5", "apellido6", "edad6"]]
+
+with open('./nuevocsv.csv', mode='w', encoding='utf-8') as f:
+    csv_writer = csv.writer(f, delimiter=',')
+    csv_writer.writerow(nombres_columnas)
+    csv_writer.writerow(linea1)
+    csv_writer.writerow(linea2)
+    csv_writer.writerows(resto_de_lineas)
