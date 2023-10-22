@@ -3,6 +3,7 @@
 import requests
 import json
 from docxtpl import DocxTemplate
+import sys
 
 
 API_URL = 'https://urlscan.io/api/v1/'
@@ -48,4 +49,16 @@ def report(apikey, uuid):
 
 
 if __name__ == "__main__":
-    pass
+    if len(sys.argv) < 4:
+        sys.exit("Debe llamar con urlscan.py $apikey [submit,result,search,report] [$url,$uuid,$domain,$uuid]")
+    if sys.argv[2] == 'submit':
+        print(submit(apikey=sys.argv[1], url=sys.argv[3]))
+    elif sys.argv[2] == 'result':
+        print(result(apikey=sys.argv[1], uuid=sys.argv[3]))
+    elif sys.argv[2] == 'search':
+        print(search(apikey=sys.argv[1], domain=sys.argv[3]))
+    elif sys.argv[2] == 'report':
+        print(report(apikey=sys.argv[1], uuid=sys.argv[3]))
+    else:
+        sys.exit("Debe llamar con urlscan.py $apikey [submit,result,search,report] [$url,$uuid,$domain,$uuid]")
+
