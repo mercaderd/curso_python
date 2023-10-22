@@ -97,6 +97,22 @@ if r.status_code == requests.codes.ok:
     print(r.json()) # Elimina el producto
 
 
+### Consumiendo una API real
+
+import requests
+import json
+
+#apikey = input('Introduce tu API key: ')
+#headers = {'API-Key':apikey,'Content-Type':'application/json'}
+#data = {"url": "https://www.elpais.com", "visibility": "public"}
+#response = requests.post('https://urlscan.io/api/v1/scan/',headers=headers, data=json.dumps(data))
+#print(response)
+#print(response.json())
+#result_url = response.json()['result']
 
 
-
+result_url = 'https://urlscan.io/api/v1/result/506598c1-04b8-4557-90d4-ee092826d366/'
+headers = {'Content-Type':'application/json'}
+r = requests.get(result_url, headers=headers)
+if r.status_code == requests.codes.ok:
+    print(r.json())

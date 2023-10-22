@@ -244,6 +244,10 @@ if r.status_code == requests.codes.ok:
     print(r.json()) # Elimina el producto
 ```
 
+## Proyecto de Ejemplo: Consumiendo una API real con autenticación
+
+
+
 
 
 **[Siguiente](../18_WebScrapping/README.md)**
