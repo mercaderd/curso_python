@@ -14,6 +14,7 @@ SEARCH = 'search/?q=domain:'
 
 def submit(apikey, url):
     """ Documentar"""
+    # TODO: Completar DOCSTRING
     # TODO: Validar url antes de seguir
     headers = {'API-Key':apikey,'Content-Type':'application/json'}
     data = {"url": url, "visibility": "public"}
@@ -23,6 +24,7 @@ def submit(apikey, url):
 
 def result(apikey, uuid):
     """ Documentar"""
+    # TODO: Completar DOCSTRING
     # TODO: Validar uuid antes de seguir
     headers = {'API-Key':apikey,'Content-Type':'application/json'}
     r = requests.get(API_URL+RESULT+uuid, headers=headers, timeout=200)
@@ -31,6 +33,7 @@ def result(apikey, uuid):
 
 def search(apikey, domain):
     """ Documentar"""
+    # TODO: Completar DOCSTRING
     # TODO: Validar domain antes de seguir
     headers = {'API-Key':apikey,'Content-Type':'application/json'}
     r = requests.get(API_URL+SEARCH+domain, headers=headers, timeout=200)
@@ -38,6 +41,7 @@ def search(apikey, domain):
 
 def report(apikey, uuid):
     """ Documentar"""
+    # TODO: Completar DOCSTRING
     # TODO: Validar uuid antes de seguir
     headers = {'API-Key':apikey,'Content-Type':'application/json'}
     r = requests.get(API_URL+RESULT+uuid, headers=headers, timeout=200)

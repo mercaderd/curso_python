@@ -274,5 +274,6 @@ De forma no exhaustiva, los pasos a seguir son los siguientes:
 7. Dar forma las funciones en el módulo, que se podrán llamar desde otros módulos cuando se importe urlscan.
 8. Completar con la parte del código que se ejecutará cuando el módulo se llame independientemente desde línea de comandos.
 
+Solución: Encuentra una posible solución en (urlscan)[https://github.com/mercaderd/curso_python/tree/main/17_HTTP/urlscan]
 
 **[Siguiente](../18_WebScrapping/README.md)**
