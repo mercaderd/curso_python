@@ -6,7 +6,7 @@
 
 ## Lo básico de HTTP 
 
-[**HTTP**](https://developer.mozilla.org/es/docs/Web/HTTP), de sus siglas en inglés: *"Hypertext Transfer Protocol"*, es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos, como pueden ser documentos HTML. Es la base de cualquier intercambio de datos en la Web, y un protocolo de estructura cliente-servidor. Así funcionan los navegadores web.
+[**HTTP**](https://developer.mozilla.org/es/docs/Web/HTTP), de sus siglas en inglés: *"Hypertext Transfer Protocol"*, es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos en internet, como pueden ser documentos HTML. Es la base de cualquier intercambio de datos en la Web, y un protocolo de estructura cliente-servidor. Así funcionan los navegadores web.
 
 ![Esquema básico de HTTP](https://developer.mozilla.org/es/docs/Web/HTTP/Overview/fetching_a_page.png)
 
@@ -81,11 +81,14 @@ La última parte del mensaje de respuesta el es 'cuerpo'. No todas las respuesta
 
 [Requests](https://requests.readthedocs.io/en/latest/) permite enviar peticiones HTTP/1.1 de forma extremadamente sencilla. No es necesario añadir manualmente cadenas de consulta a las URL ni codificar los datos POST. Keep-alive y HTTP connection pooling son 100% automáticos, gracias a urllib3.
 
+Lo primero que hay que hacer para trabajar con requests es importarlo:
+```python
+import requests
+```
+
 Hacer una petición GET:
 
 ```python
-import requests
-
 r = requests.get('https://www.aepd.es')
 print(r.status_code)
 print(r.request.headers)
@@ -143,17 +146,103 @@ Los **endpoints** de la API son las URL públicas expuestas por el servidor que 
 
 La URL de la API es https://fakestoreapi.com
 
-#### Primera petición a una API
+#### Haciendo peticiones GET a una API
+
+Si se hace una primera petición a un recurso inexistente de una API, se obtendrá una respuesta con un código de estado error. En el siguiente ejemplo el código de estado obtenido será ERROR 404, cuyo significado es *Not Found* (recurso no encontrado).
 
 ```python
-import requests
-
-r = requests
+r = requests.get('https://fakestoreapi.com/este-endpoint-no-existe')
+print(r.status_code) # 404 Error porque el endpoint no existe
 ```
 
+Si se hace una petición a un **endpoint** existente y siguiendo la estructura de la documentación, debería obtenerse un código de estado SUCCESS, por ejemplo 200 OK.
 
+```python
+r = requests.get('https://fakestoreapi.com/products')
+if r.status_code == requests.codes.ok: # 200 OK
+    print(type(r.json()))
+    print(json.dumps(r.json()[0:2],indent=4)) # Imprime los dos primeros productos que ha devuelto la API
+```
 
+#### Peticiones GET con parámetros
 
+Según la documentación de la API, el **endpoint** *products* admite un parámetro de url *limit* para limitar el número de productos que envía el servidor.
+
+```python
+params = {'limit': 2}
+r = requests.get('https://fakestoreapi.com/products', params=params)
+print(r.url)  # https://fakestoreapi.com/products?limit=2
+if r.status_code == requests.codes.ok:
+    print(json.dumps(r.json(),indent=4)) # La API devuelve 2 productos
+```
+El mismo **endpoint** también admite recuperar un único producto especificando el *product_id* en la petición. En este caso, el parámetro *product_id* formará parte del *path* de la URL y no se envía como un parámetro.
+
+```python
+URL = 'https://fakestoreapi.com/'
+ENDPOINT = 'products/'
+product_id = 15
+
+url = URL + ENDPOINT + str(product_id)
+
+print(url) # https://fakestoreapi.com/products/15
+
+r=requests.get(url)
+if r.status_code == requests.codes.ok:
+    print(r.json())
+    for key,value in r.json().items():
+        print(f'{key}: {value}')
+```
+
+#### Peticiones POST a una API
+
+Según la documentación de la API, el **endpoint** *products* admite peticiones POST para crear nuevos productos. En este caso, vamos a añadir un nuevo producto de prueba:
+
+```python
+new_product = {
+    "title": 'test product',
+    "price": 13.5,
+    "description": 'This is just a test product ',
+    "image": 'https://i.pravatar.cc',
+    "category": 'electronic'
+}
+
+URL = 'https://fakestoreapi.com/'
+ENDPOINT = 'products/'
+
+url = URL + ENDPOINT
+
+r=requests.post(url, data=new_product)
+if r.status_code == requests.codes.ok:
+    print(r.json()) # Devuelve el nuevo producto, incluyendo el product_id asignado
+    for key,value in r.json().items():
+        print(f'{key}: {value}')    
+```
+
+#### Peticiones PUT y DELETE
+
+El mismo **endopoint** admite peticiones PUT para modificar productos existentes y peticiones DELETE para eliminar productos. A continuación se muestra un ejemplo para modificar el producto que acabamos de crar y otro ejemplo para eliminarlo de la lista de productos.
+
+```python
+URL = 'https://fakestoreapi.com/'
+ENDPOINT = 'products/'
+
+url = URL + ENDPOINT + str(new_product_id)
+
+product_changes = {
+    'price': '20.5',
+    'category': 'photo'
+}
+
+r=requests.put(url, data=product_changes)
+if r.status_code == requests.codes.ok:
+    print(r.json()) # Devuelve los campos modificados
+```
+
+```python
+r=requests.delete(url)
+if r.status_code == requests.codes.ok:
+    print(r.json()) # Elimina el producto
+```
 
 
 
