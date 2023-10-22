@@ -102,13 +102,14 @@ if r.status_code == requests.codes.ok:
 import requests
 import json
 
-#apikey = input('Introduce tu API key: ')
-#headers = {'API-Key':apikey,'Content-Type':'application/json'}
-#data = {"url": "https://www.elpais.com", "visibility": "public"}
-#response = requests.post('https://urlscan.io/api/v1/scan/',headers=headers, data=json.dumps(data))
-#print(response)
-#print(response.json())
-#result_url = response.json()['result']
+apikey = '90dc98b1-7967-433f-afc9-11e66de773ce'
+headers = {'API-Key':apikey,'Content-Type':'application/json'}
+#headers = {'Content-Type':'application/json'}
+data = {"url": "https://www.elpais.com", "visibility": "public"}
+response = requests.post('https://urlscan.io/api/v1/scan/',headers=headers, data=json.dumps(data))
+print(response)
+print(response.json())
+result_url = response.json()['api']
 
 
 result_url = 'https://urlscan.io/api/v1/result/506598c1-04b8-4557-90d4-ee092826d366/'

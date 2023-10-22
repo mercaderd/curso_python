@@ -246,8 +246,33 @@ if r.status_code == requests.codes.ok:
 
 ## Proyecto de Ejemplo: Consumiendo una API real con autenticación
 
+[urlscan.io](https://urlscan.io/) es un servicio de internet para escanear páginas web, que ofrece una API que permite enviar URL para su escaneado y recuperar los resultados una vez finalizado el escaneado. Además, se puede utilizar la API para buscar análisis existentes por atributos como dominios, IP, números de sistema autónomo (AS), hashes, etc. números, hashes, etc.
 
+Para utilizar las API, se debe crear una cuenta de usuario, crear una API key e incluirla en las llamadas a la API.
 
+El **objetivo del proyecto** es crear un **módulo de python** con funciones que puedan reutilizarse desde otros proyectos y que el módulo pueda llamarse por sí mismo para hacer consultas a la API.
+
+El módulo se llamará urlscan.py y contendrá tres funciones:
+
+1. Una función *submit* para enviar urls a analizar. Recibe como parámetro de entrada la API key y la url a analizar. Devuelve un diccionario/json con la respuesta obtenida de la API. 
+2. Una función *result* para consultar un análisis a partir de su *uuid*. Recibe como parámetro de entrada la *API key* y el *uuid*. Devuelve un diccionario/json con la respuesta obtenida de la API.
+3. Una función *search* para buscar análisis previos sobre algún dominio. Recibe como parámetro de entrada la *API key* y el *dominio* a buscar. Devuelve un diccionario/json con la respuesta obtenida de la API.
+4. [Opcional] Una función *report* para gerenar un informe en .docx de un análisis. Recibe como parámetro de entrada la *API key* y el *uuid*. Crea un documento report.docx con el informe del análisis.
+
+El módulo se podrá llamar desde línea de comando especificando 3 parámetros: API key, comando (submit, result, search, report), parámetro (url, uuid, dominio).
+
+> ⚠️ **Warning:** Hay que evitar que la API key se quede hardcodeada en el código y pueda acabar publicada.
+
+De forma no exhaustiva, los pasos a seguir son los siguientes:
+
+1. Consultar la (documentación de la API)[https://urlscan.io/docs/api/] para ver qué **endpoints** están disponibles, cómo hay que llamarlos y qué resultados devuelven.
+2. Crear un usuario en (urlscan.io)[https://urlscan.io/user/signup], hacer login y crear un nuevo API key y copialo para poder hacer primeras peticiones de prueba.
+3. Crear una nueva carpeta para el proyecto y un entorno virtual dentro del proyecto.
+4. Activar el entorno virtual e instalar los modulos/paquetes necesarios con pip: *requests* para las peticiones a la API y *docxtpl* para los informes en docx.
+5. Crear el fichero requiements.txt con *pip freeze > requirements.txt*
+6. Crear un archivo urlscan.py y comprobar que se pueden hacer peticiones a la API para enviar urls, recuperar resultados de análisis y buscar dominios.
+7. Dar forma las funciones en el módulo, que se podrán llamar desde otros módulos cuando se importe urlscan.
+8. Completar con la parte del código que se ejecutará cuando el módulo se llame independientemente desde línea de comandos.
 
 
 **[Siguiente](../18_WebScrapping/README.md)**
