@@ -52,18 +52,33 @@ headers = {
         'Upgrade-Insecure-Requests': '1'
     }
 
-url = ''
+url = 'https://www.aepd.es/informes-y-resoluciones/resoluciones'
 req = requests.get(url, headers=headers)
-    if req.status_code == 200:
-        html = BeautifulSoup(req.text, 'html.parser') # Beautiful Soup para parsear el html y poder buscar elementos
-        fines = html.
+print(req.url)
+if req.status_code == 200:
+    html = BeautifulSoup(req.text, 'html.parser') # Beautiful Soup para parsear el html y poder buscar elementos
 ```
 
 ### 4. Buscar y parsear con *Beautiful Soup* los elementos identificados
 
 Con *BeautifulSoup* ahora es necesario localizar los elementos interesantes y parsear el contenido:
 ```python
-
+resoluciones = html.find_all('div', {'class': 'layout__region--content'})
+    for resolucion in resoluciones:
+        titulo = ''
+        link = ''
+        fecha = ''
+        tag_titulo = resolucion.find('div', {'class': 'field--name-title'})
+        if tag_titulo:
+            titulo = tag_titulo.getText()
+        tag_link = resolucion.find('a',{'class': ''})
+        print(tag_link)
+        if tag_link:
+            link = 'https://www.aepd.es' + tag_link['href']
+        tag_fecha = resolucion.find('time')
+        if tag_fecha:
+            fecha = tag_fecha['datetime']
+        print((titulo,link,fecha))
 ```
 
 
