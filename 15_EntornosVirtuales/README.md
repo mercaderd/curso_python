@@ -20,7 +20,7 @@ pip 23.2.1 from /usr/local/python/3.10.8/lib/python3.10/site-packages/pip (pytho
 Instalar un paquete es muy sencillo, por ejemplo vamos a instalar el paquete [*docxtpl*](https://docxtpl.readthedocs.io/en/latest/), utilizado para trabajar plantillas de documentos en docx.
 
 ```console
-$ pip install requests
+$ pip install docxtpl
 Collecting docxtpl
   Downloading docxtpl-0.16.7-py2.py3-none-any.whl (28 kB)
 Collecting jinja2

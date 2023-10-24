@@ -186,9 +186,9 @@ print(math.log10(100))   # 2, logarithm with 10 as base
 
 ## Paquetes
 
-Los módulos pueden (y suelen) organizarse en un tipo de carpetas especiales que se llaman paquetes. Dentro de estas carpetas deben existir necesariamente un archivo llamado __init__.py, aunque esté vacío. No es obligatorio que todos los módulos pertenezcan a un paquete.
+Los módulos pueden (y suelen) organizarse en un tipo de carpetas especiales que se llaman paquetes. Dentro de estas carpetas deben existir necesariamente un archivo llamado \_\_init\_\_.py, aunque esté vacío. No es obligatorio que todos los módulos pertenezcan a un paquete.
 
-Si el paquete o algún módulo del paquete es importado, el código en __init__.py se ejecutará. Se utiliza cuando hay que incializar algo para utilizar el paquete.
+Si el paquete o algún módulo del paquete es importado, el código en \_\_init\_\_.py se ejecutará. Se utiliza cuando hay que incializar algo para utilizar el paquete.
 
 Los módulos dentro de un paquete se pueden importar utilizando notación con punto. Ej: *import paquete.modulo*, *from paquete import modulo*, *from paquete.modulo import clase/funcion*, *from paquete import* *.
 

@@ -144,7 +144,7 @@ Las principales funciones/métodos para trabajar con el formato JSON son:
 - **json.dump**(**obj**, **fp**, *, skipkeys=False, **ensure_ascii=True**, check_circular=True, allow_nan=True, cls=None, **indent=None**, separators=None, default=None, sort_keys=False, **kw) → Serializa un objeto (normalmente un diccionario) en un archivo *fp*.
 - **json.dumps**(**obj**, *, skipkeys=False, **ensure_ascii=True**, check_circular=True, allow_nan=True, cls=None, **indent=None**, separators=None, default=None, sort_keys=False, **kw) → Serializa un objeto (normalmente un diccionario) lo devuelve en una cadena de texto.
 - **json.load**(**fp**, *, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, **kw) → Lee un json de un fichero JSON *fp* y devuelve un objeto (normalmente un diccionario o una lista de diccionarios).
-- json.loads(**s**, *, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, **kw) → Lee un json de una cadena de texto *s* y devuelve un objeto (normalmente un diccionario).
+- **json.loads**(**s**, *, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, **kw) → Lee un json de una cadena de texto *s* y devuelve un objeto (normalmente un diccionario).
 
 > ⚠️ **Advertencia:** Tenga cuidado al parsear/cargar datos JSON de fuentes no fiables. Una cadena JSON maliciosa puede hacer que el descodificador consuma considerables recursos de CPU y memoria. Se recomienda limitar el tamaño de los datos que se van a analizar.
 
