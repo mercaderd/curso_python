@@ -96,7 +96,7 @@ Ejemplo:
 
 ```python
 with open('./ejemplo.txt','a', encoding='utf-8') as f:
-    f.write('Texto añadido al final')
+    f.write('\nTexto añadido al final\n')
 ```
 
 El siguiente ejemplo sobreescribirá el contenido del archivo si existe, si no existe lo creará:
@@ -137,7 +137,7 @@ except FileNotFoundError as e:
 
 ## Archivos JSON
 
-JSON es el acrónimo de JavaScript Object Notation. Es el estándar para almacena objetos javascript o (listas de) diccionarios de python serializados (¿stringificados?). En definitiva, es un formato de texto sencillo para el intercambio de datos. En Python el módulo [json](https://docs.python.org/es/3.10/library/csv.html) proporciona herramientas para trabajar con este formato.
+JSON es el acrónimo de JavaScript Object Notation. Es el estándar para almacena objetos javascript o (listas de) diccionarios de python serializados (¿stringificados?). En definitiva, es un formato de texto sencillo para el intercambio de datos. En Python el módulo [json](https://docs.python.org/es/3.10/library/json.html) proporciona herramientas para trabajar con este formato.
 
 Las principales funciones/métodos para trabajar con el formato JSON son:
 
@@ -174,7 +174,7 @@ with open('./persona.json', mode = 'w', encoding = 'utf-8') as f:
 
 # Otra forma más directa
 with open('./persona.json', mode = 'w', encoding = 'utf-8') as f:
-    json.dump(persona_json, f, ensure_ascii=False, indent=4)
+    json.dump(persona, f, ensure_ascii=False, indent=4)
 ```
 ### De archivo JSON a objeto python
 
