@@ -154,13 +154,6 @@ El módulo se llamará empresas.py y contendrá una única funcion:
 
 El módulo se podrá llamar desde línea de comando especificando tantos NIFs como se quieran: NIF1 NIF2 NIF3 ...
 
-https://www.axesor.es/buscar/empresas?tabActivo=empresas&q=Q2813014D
-params = {'tabActivo': 'empresas', 'q': 'Q2813014D'}
-
-r = requests.get('https://www.axesor.es/buscar/empresas', params=params)
-print(r.url)
-print(r.status_code)
-
 Solución: Encuentra una posible solución en (empresas)[https://github.com/mercaderd/curso_python/tree/main/18_WebScrapping/empresas]
 
 **[Siguiente](../19_/Objetos.md)**
