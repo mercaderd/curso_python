@@ -244,6 +244,24 @@ if r.status_code == requests.codes.ok:
     print(r.json()) # Elimina el producto
 ```
 
+#### Enviar un archivo en una petición con requests
+
+```python
+ficheros = {'file1': open('./nombre_fichero.pdf', 'rb')}
+r = requests.post('https://mipagina.xyz/form/', files=ficheros)
+```
+
+#### Descargar un archivo con requests
+
+```python
+url = '' # URL del archivo descargar (en este caso un binario como puede ser un pfd o una imágen)
+filepath = './descargado.pdf'  # Path dónde guardar el archivo
+with requests.get(url, stream = True) as r:
+    with open(filepath, 'wb') as f:
+        for chunk in r.iter_content(chunk_size=1024):
+            f.write(chunk)            
+```
+
 ## Proyecto de Ejemplo: Consumiendo una API real con autenticación
 
 [urlscan.io](https://urlscan.io/) es un servicio de internet para escanear páginas web, que ofrece una API que permite enviar URL para su escaneado y recuperar los resultados una vez finalizado el escaneado. Además, se puede utilizar la API para buscar análisis existentes por atributos como dominios, IP, números de sistema autónomo (AS), hashes, etc. números, hashes, etc.
