@@ -11,7 +11,7 @@ headers = {
         'Upgrade-Insecure-Requests': '1'
     }
 
-url = 'https://www.aepd.es/informes-y-resoluciones/resoluciones'
+url = ''
 req = requests.get(url, headers=headers)
 print(req.url)
 if req.status_code == 200:
@@ -27,7 +27,7 @@ if req.status_code == 200:
         tag_link = resolucion.find('a',{'class': ''})
         print(tag_link)
         if tag_link:
-            link = 'https://www.aepd.es' + tag_link['href']
+            link = '' + tag_link['href']
         tag_fecha = resolucion.find('time')
         if tag_fecha:
             fecha = tag_fecha['datetime']
