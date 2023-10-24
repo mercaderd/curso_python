@@ -8,6 +8,27 @@
 
 *Python pip* es el gestor de paquetes de python y se utiliza para instalar/desinstalar fácilmente paquetes en una instalación de python o en un entorno virtual. No es el único gestor de paquetes de Python, pero sí el mas extendido.
 
+### Listar paquetes instalados
+
+Para listar los paquetes instalados se utiliza *pip list*.
+
+```console
+$ pip list
+Package           Version
+----------------- -------
+Babel             2.13.0
+docxcompose       1.4.0
+docxtpl           0.16.7
+Jinja2            3.1.2
+lxml              4.9.3
+MarkupSafe        2.1.3
+pip               22.2.2
+python-docx       1.0.1
+setuptools        63.2.0
+six               1.16.0
+typing_extensions 4.8.0
+```
+
 ### Instalar paquetes
 
 Generalmente *pip* vendrá instalado en cualquier distribución de python. Para comprobar si *pip* esta instalado se puede ejecutar:
@@ -51,27 +72,6 @@ Installing collected packages: typing-extensions, six, MarkupSafe, lxml, babel, 
 Successfully installed MarkupSafe-2.1.3 babel-2.13.0 docxcompose-1.4.0 docxtpl-0.16.7 jinja2-3.1.2 lxml-4.9.3 python-docx-1.0.1 six-1.16.0 typing-extensions-4.8.0
 ```
 
-### Listar paquetes instalados
-
-Para listar los paquetes instalados se utiliza *pip list*.
-
-```console
-$ pip list
-Package           Version
------------------ -------
-Babel             2.13.0
-docxcompose       1.4.0
-docxtpl           0.16.7
-Jinja2            3.1.2
-lxml              4.9.3
-MarkupSafe        2.1.3
-pip               22.2.2
-python-docx       1.0.1
-setuptools        63.2.0
-six               1.16.0
-typing_extensions 4.8.0
-```
-
 ### Obtener información sobre un paquete
 
 Se obtiene información sobre un paquete con *pip show*.
@@ -88,6 +88,12 @@ License: BSD-3-Clause
 Location: /workspaces/curso_python/15_EntornosVirtuales/venv/lib/python3.10/site-packages
 Requires: MarkupSafe
 Required-by: docxtpl
+```
+
+### Desinstalar paquetes
+
+```console
+$ pip uninstall docxtpl
 ```
 
 ## Entornos virtuales
