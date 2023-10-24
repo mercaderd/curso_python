@@ -136,14 +136,6 @@ if req.status_code == 200:
                 download(link, f"{titulo}.pdf")
 ```
 
-
-https://www.axesor.es/buscar/empresas?tabActivo=empresas&q=Q2813014D
-params = {'tabActivo': 'empresas', 'q': 'Q2813014D'}
-
-r = requests.get('https://www.axesor.es/buscar/empresas', params=params)
-print(r.url)
-print(r.status_code)
-
 ## Proyecto de Ejemplo: Obtener los datos de una empresa a partir del NIF con WebScrapping
 
 El **objetivo del proyecto** es crear un **módulo de python** con una función que pueda reutilizarse desde otros proyectos y que el módulo pueda llamarse por sí mismo para obtener los datos de una empresa a partir de su NIF.
