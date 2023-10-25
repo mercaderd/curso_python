@@ -45,21 +45,6 @@ print(texto)
 f.close()
 ```
 
-- *readline()*: Lee únicamente la primera línea, en sucesivas llamadas irá leyendo la siguiente línea.
-
-```python
-f = open('./ejemplo.txt', encoding='utf-8')
-print(f) # No imprime el contenido del archivo, sino otra información
-print(type(f))
-linea = f.readline()
-print(type(linea))
-print(linea)
-linea = f.readline()
-print(type(linea))
-print(linea)
-f.close()
-```
-
 - *readlines()*: Lee todo el téxto línea a línea, y devuelve un diccionario de líneas.
 
 ```python
@@ -70,6 +55,17 @@ lineas = f.readlines()
 print(type(lineas))
 for i,linea in enumerate(lineas):
     print(f'Línea {i}: {linea}')
+f.close()
+```
+
+Otra posibilidad es: 
+
+```python
+f = open('./ejemplo.txt', encoding='utf-8')
+print(f) # No imprime el contenido del archivo, sino otra información
+print(type(f))
+for linea in f: # Recorrer directamente el archivo como un iterable
+    print(linea)
 f.close()
 ```
 
