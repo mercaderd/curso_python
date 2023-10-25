@@ -93,7 +93,7 @@ from sqlalchemy import Column, Integer, String, Float
 
 class Persona(db.Base):
     __tablename__ = 'Persona'
-    pk = Column(Integer, primay_key=True)
+    pk = Column(Integer, primary_key=True)
     nombre = Column(String, nullable=False)
     apellido = Column(String, nullable=False)
     edad = Column(Integer,nullable=True)
