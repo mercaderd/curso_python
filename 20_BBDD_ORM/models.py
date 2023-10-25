@@ -9,3 +9,10 @@ class Persona(db.Base):
     nombre = Column(String, nullable=False)
     apellido = Column(String, nullable=False)
     edad = Column(Integer,nullable=True)
+
+    def __str__(self):
+        return f"{self.nombre} {self.apellido}"
+
+    def __repr__(self):
+        return f"Persona: {self.nombre} {self.apellido}"    
+    
