@@ -54,7 +54,7 @@
 ## 📗 Lección 18: [Web Scrapping](18_WebScrapping/README.md)
 
 
-## 📗 Lección 19: [Programación Orientada a Objetos](19_Objetos/README.md)
+## 📗 Lección 19: [Clases y objetos](19_Objetos/README.md)
 
 
 ## 📗 Lección 20: [Bases de datos con SQLAlchemy](20_BBDD_ORM/README.md)
