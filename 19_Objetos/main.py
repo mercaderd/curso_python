@@ -16,8 +16,9 @@ print(persona1)
 # Constructor
 
 class Persona():
+    version = '1.0.0' # Atributo de clase
     def __init__(self, nombre, apellido = None, edad = None, pais = None, ciudad = None):
-        self.nombre = nombre
+        self.nombre = nombre        # Atributos de objeto
         self.apellido = apellido
         self.edad = edad
         self.pais = pais
@@ -26,10 +27,16 @@ class Persona():
 persona1 = Persona("Pedro")
 print(persona1)
 print(persona1.nombre)
+print(persona1.version)
+persona2 = Persona("Alicia")
+print(persona2)
+print(persona2.nombre)
+print(persona2.version)
 
 # Métodos de objeto
 
 class Persona():
+    version = '1.0.0' # Atributo de clase
     def __init__(self, nombre, apellido = None, edad = None, pais = None, ciudad = None):
         self.nombre = nombre
         self.apellido = apellido
@@ -54,6 +61,7 @@ print(persona1.datos())
 ## Método para modificar atributos de objeto
 
 class Persona():
+    version = '1.0.0' # Atributo de clase
     def __init__(self, nombre, apellido = None, edad = None, pais = None, ciudad = None):
         self.nombre = nombre
         self.apellido = apellido

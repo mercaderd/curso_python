@@ -10,6 +10,10 @@ Python es un lenguaje de programación orientado a objetos. Todo en Python es un
 
 Hemos estado trabajando con clases y objetos desde el comienzo del curso.
 
+> Nota: En Python es habitual que los nombres de clases comiencen por una letra mayúscula y que los nombres de objetos sean en minúsculas. 
+> Ej de nombres de clases: Persona, Session, Request
+> Ej de nombres de objetos (instancias de clases): persona, persona1, session, r
+
 ## Crear una clase
 
 Python y su librería estándar tiene muchas clases con diversa funcionalidad que se pueden utilizar, pero también es posible crear nuevas clases con la palabra reservada *class*.
@@ -42,8 +46,9 @@ Sin embargo, la clase *Persona* que acabamos de definir no tiene ningún constru
 
 ```python
 class Persona():
+    version = '1.0.0' # Atributo de clase
     def __init__(self, nombre, apellido = None, edad = None, pais = None, ciudad = None):
-        self.nombre = nombre
+        self.nombre = nombre        # Atributos de objeto
         self.apellido = apellido
         self.edad = edad
         self.pais = pais
@@ -52,6 +57,11 @@ class Persona():
 persona1 = Persona("Pedro")
 print(persona1)
 print(persona1.nombre)
+print(persona1.version)
+persona2 = Persona("Alicia")
+print(persona2)
+print(persona2.nombre)
+print(persona2.version)
 ```
 
 ### Métodos de objeto
@@ -60,6 +70,7 @@ Los objetos pueden tener métodos. Los métodos son funciones que pertenecen al 
 
 ```python
 class Persona():
+    version = '1.0.0'
     def __init__(self, nombre, apellido = None, edad = None, pais = None, ciudad = None):
         self.nombre = nombre
         self.apellido = apellido
@@ -86,6 +97,7 @@ print(persona1.datos())
 
 ```python
 class Persona():
+    version = '1.0.0'
     def __init__(self, nombre, apellido = None, edad = None, pais = None, ciudad = None):
         self.nombre = nombre
         self.apellido = apellido
