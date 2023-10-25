@@ -13,5 +13,5 @@ def run():
 
 
 if __name__ == '__main__':
-    db.Base.metadata.create_all(db.engine)
+    db.Base.metadata.create_all(db.engine) # Crea las tablas si no existen.
     run()
