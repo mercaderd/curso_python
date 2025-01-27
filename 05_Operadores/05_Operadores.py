@@ -35,7 +35,8 @@ print((3>2) and (5>1)) # True
 
 # Operadores is e in
 a = 3
-b = a
+b = 3.0
+print(a == b)
 print(a is b)
 
 cadena = "mi cadena"
