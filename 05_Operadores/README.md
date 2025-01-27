@@ -88,7 +88,8 @@ El operador *in* sirve para comprobar si un operando está en una secuencia (cad
 
 ```python
 a = 3
-b = a
+b = 3.0
+print(a == b)
 print(a is b)
 
 cadena = "mi cadena"
